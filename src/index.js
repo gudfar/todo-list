@@ -37,7 +37,7 @@ class App extends Component{
             const newItem = {
                 id: (!items[items.length - 1]) ? 0 : items[items.length - 1].id + 1,
                 text: text,
-                important: Math.random() >= 0.5 //random boolean
+                important: false
             };
             return {items: [...items, newItem]};
         });
