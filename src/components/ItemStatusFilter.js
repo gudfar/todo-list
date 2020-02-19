@@ -25,10 +25,10 @@ const ItemStatusFilter = (props) => {
                 label = label.charAt(0).toUpperCase() + label.slice(1);
 
                 if (name === 'all') {
-                    return <button key={name} onClick={() => props.onFilterChange('', '')} type="button" className={classNames}>{ label }</button>;
+                    return <button key={name} onClick={() => props.onFilterChange('', '')} type="button" className={classNames}>{ label }</button>
                 }
                 return <button key={name} onClick={() => props.onFilterChange(name, true)} type="button" className={classNames}>{ label }</button>
-            })};
+            })}
         </div>
     );
 };
